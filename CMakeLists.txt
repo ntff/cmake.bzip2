@@ -55,14 +55,3 @@ export(PACKAGE ${PROJECT_NAME})
 set(CPACK_GENERATOR "TBZ2")
 set(CPACK_PACKAGE_FILE_NAME "${PROJECT_NAME_LOWER}-${PROJECT_VERSION}-${CMAKE_LIBRARY_ARCHITECTURE}")
 include(CPack)
-
-if(CMAKE_CURRENT_BINARY_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
-    set_property(DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}"
-        PROPERTY ADDITIONAL_MAKE_CLEAN_FILES
-            include/
-            lib/
-            ${PROJECT_NAME}-config.cmake
-            ${PROJECT_NAME}-config-version.cmake
-            ${CPACK_PACKAGE_FILE_NAME}.tar.bz2
-    )
-endif()
