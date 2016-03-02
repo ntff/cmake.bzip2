@@ -12,8 +12,12 @@ CMakeCache.txt
 CPackConfig.cmake
 CPackSourceConfig.cmake
 Makefile
+.ninja_deps
+.ninja_log
+build.ninja
 cmake_install.cmake
 install_manifest.txt
+rules.ninja
 *-config-version.cmake
 *-config.cmake
 *.tar.bz2
